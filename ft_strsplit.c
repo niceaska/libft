@@ -83,7 +83,7 @@ char			**ft_strsplit(char const *s, char c)
 	if (!s || !c)
 		return (NULL);
 	size = count_words((char *)s, c);
-	if (!(tab = (char **)malloc(sizeof(char *) * size + 1)))
+	if (!(tab = (char **)malloc(sizeof(char *) * (size + 1))))
 		return (NULL);
 	if (!size)
 	{

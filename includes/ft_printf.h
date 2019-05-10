@@ -32,7 +32,6 @@
 # define M_FL (1 << 11)
 
 # include <libft.h>
-# include <stdio.h>
 # include <stdlib.h>
 # include <stdarg.h>
 # include <unistd.h>
