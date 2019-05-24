@@ -6,7 +6,7 @@
 #    By: lgigi <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/03 19:20:06 by lgigi             #+#    #+#              #
-#    Updated: 2019/04/05 16:27:20 by lgigi            ###   ########.fr        #
+#    Updated: 2019/05/24 12:39:42 by lgigi            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ OBJ			  = $(SOURCES:.c=.o)
 
 all: $(NAME)
 
-$(NAME): 
+$(NAME): $(SOURCES) $(FT_PRINTF_SRC)
 	$(CC) $(CFLAGS) $(SOURCES) $(FT_PRINTF_SRC) -I $(INCLUDES)
 	ar rc $(NAME) $(OBJ) $(FT_PRINTF_OBJ)
 	ranlib $(NAME)
